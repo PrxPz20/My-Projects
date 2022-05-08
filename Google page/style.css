@@ -1,0 +1,190 @@
+/* https://www.adorama.com/als.mvc/cartview 
+   https://www.adorama.com/as90mb14s0m0.html
+   https://www.adorama.com/amd100163wof.html
+*/
+html { height: 100%; }
+
+body { background-color: white; margin: 0px; }
+.container {
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 1000px;
+    height: 400px;
+
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+}
+
+nav {
+    background-color: white;
+    height: 50px;
+    width: 350px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+main {
+    width: 900px;
+    height: 300px;
+    background-color:white;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+    font-size: 85px;
+}
+
+/* The text Entry under the Google h1*/
+main input[type=text] {
+    width: 584px;
+    height: 20px;
+    font-size: 19px;
+    outline: none;
+    border: 1px solid gray;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 25px;
+    background-image: url(images/search-interface-symbol.png);
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 40px;
+    background-repeat: no-repeat;
+}
+input[type=text]:hover { border: 1px solid; }
+input[type=text]:focus {
+    border: 1px solid  gray;
+    border: 1.5px solid;
+}
+
+/* <a> Gmail</a> and <a> Images </a> inside the header inside the div*/
+nav a {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+nav a:focus { color: #000000;}
+
+/* Div inside the footer, at the left of the footer it has 4 a*/
+.subject {
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 25px;
+    width: 430px;
+    height: 30px;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+
+.subject a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.subject a:hover { text-decoration: underline; }
+.subject a:focus { color: #000000;}
+
+/* <Sign in> Button in the header inside the nav */
+nav input[type=submit] {
+    background-color:  #4285f4;
+    width: 92px;
+    height: 35px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;  /*when your mouse is on the button, the cursor become a hand*/
+}
+nav input[type=submit]:hover { outline: none; }
+
+/* Div inside the footer, at the right of the footer it has 3 a*/
+.Privacy {
+    background-color: #f2f2f2;
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    width: 215px;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+
+.Privacy a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.Privacy a:hover { text-decoration: underline; }
+.Privacy a:focus { color: #000000;}
+
+.Buttons {
+    position: relative;
+    background-color: white;
+    padding-top: 18px;
+    left: 160px;
+    width: 584px;
+
+}
+
+.Buttons input[type=submit] {
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 150px;
+    height: 36px;
+    padding-top: 5px;
+    margin: 11px 4px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.Buttons input[type=submit]:hover { outline: none; }
+
+/*
+    background-color: #f8f9fa;
+
+    
+    
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+*/
