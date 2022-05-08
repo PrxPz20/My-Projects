@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    font-family: "Rubik", sans-serif;
+    height: auto;
+}
+
+main {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ALL THE CONTANT */
+.container {
+    margin-top: 1px;
+
+    width: 100%;
+    /* width: -webkit-max-content; */
+    height: auto;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    height: 180px;
+
+}
+
+/* The First image at the top of the Website */
+header img {
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* AZZURO Text in the -Header- */
+.Shop-Title h2 {
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 1.8em;
+}
+
+
+.Item-Field {
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+}
+
+/* The the container that containies the Image-Beans and the Text "Our Menu" */
+.Coffee-Menu {
+    margin-top: 25px;
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    height: 180px;
+}
+
+.Image {    
+    background-image: url(../images/Coffee-Beans.jpg);
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.Image a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}                     
+
+/* The Title is the "Our Menu" text  */
+.Title {
+    margin: 0 auto;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.Title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: transform 500ms ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.Title:hover::before,
+.Title:focus::before {
+    transform: scaleY(1);
+}
+
+.Page-content {
+    padding-top: 25px;
+    /* background-color: pink; */
+    max-width: 100%;
+    height: auto;
+
+}
+
+.Summary-coffe {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 0.8em;
+    width: 380px;
+}
+
+.Coffee-Data {
+    margin-top: 45px;
+    margin-left: 10px;
+    color: rgba(0,0,0,.8);
+    font-size: 1em;
+    text-align: left;
+}
+
+.Coffee-Data h3,a {
+
+    margin-bottom: 17px;
+    color: rgba(0,0,0,.8);
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: .08em;
+    line-height: 1.4em;
+    
+}
+
+#Coffe-location {
+    margin-bottom: 17px;
+    color: rgba(0,0,0,.8);
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: .08em;
+    line-height: 1.5em;
+}
+
+#Coffe-Hours {
+    margin-bottom: 17px;
+    color: rgba(0,0,0,.8);
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: .08em;
+    line-height: 1.5em;
+}
+
+.Bianco-Coffee1 {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    margin-top: 40px;
+}
+
+.cafe2 {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* Containes the INSTAGRAM AND FACEBOOK Icons */
+.preFooter {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #1f1f1f;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 2em;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* INSTAGRAM container */
+.Instagram {
+
+    /* background-color: aqua; */
+    text-align: right;
+    width: 50%;
+}
+
+/* The INSTAGRAM icon / link */
+.fa-instagram {
+
+    margin-top: 10px;
+    margin-right: 7px;
+    padding-left: 8px;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+}
+
+.Facebook {
+
+    /* background-color: coral; */
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    width: 50%;
+}
+
+
+/* The FACEBOOK icon / link */
+.fa-facebook {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+}
+
+footer {
+    
+    background-color: #171717;
+    width: auto;
+    max-width: 100%;
+    height: 100px;
+}
+
+
+/* @media only screen and (max-width: 850px) {
+    body {
+        background-color: red;
+    }
+} */
+
+
+

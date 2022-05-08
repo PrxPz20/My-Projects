@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">    
+    <title>AZZURO</title>
+    <!-- C:\MAMP\htdocs\assets\images -->
+</head>
+
+<body>
+
+    <header> 
+        <div class="Shop-Title">  <h2> AZZURO </h2> </div>
+        <img src="assets/images/First_Main_Image.jpg" alt="Coffee-Background">
+    </header>
+
+    <div class="container">
+        <main>
+
+            <div class="Item-Field">
+
+                <div class="Coffee-Menu">
+                    
+                    <div class="Image">
+                        <div class="Title"> <a href="Menu.html">Our Menu</a> </div>
+                    </div>
+
+                </div>
+            
+                <div class="Page-content">
+                    <h2>Bianco Caffè</h2>
+
+                    <p class="Summary-coffe">
+                        Choosing Bianco means choosing to rely on a roasting company with over 85 years of experience, with the skills and professionalism of 4 generations of entrepreneurs who have brought cutting-edge technological innovations, attention to detail, excellence in the choice of raw material, prestigious roasting experience, knowledge of the market and marketing strategy.
+                    </p>
+
+                    <div class="Coffee-Data">
+
+                        <h3>
+                            Phone:
+                            <br>
+                            95 536076
+                        </h3>
+
+                        <p id="Coffe-location">
+                            Location:
+                            <br>
+                            5 Leonidou Street
+                            <br>
+                            Nicosia
+                        </p>
+
+                        <p id="Coffe-Hours">
+                            Hours:
+                            <br>
+                            Monday-Friday:  9am - 11pm
+                            <br>
+                            Saturday-Sunday:  9am - 11pm
+                            <br>
+                            <strong style="color: black ">Public. Holidays:</strong>
+                             Open
+                            <br>
+                        </p>
+
+                    </div>  <!-- Coffee-Data DIV  END-->
+
+                </div>  <!-- Page-content DIV  END-->
+
+                    
+                <div class="Bianco-Coffee1">
+                    <img class="cafe2" src="assets/images/Bianco_caffe-Box.jpg" alt="Bianco coffee Image">
+                    <img class="cafe2" src="assets/images/NEW-3.jpg" alt="Coffee Group head Image">
+
+
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+                        
+                        function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("cafe2");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 4000); // Change image every 2 seconds
+                        }
+                        
+                    </script>                        
+                </div> <!-- Bianco Coffee  -->
+
+            </div>  <!-- Item-Field DIV  END-->
+
+            <div class="preFooter">
+                <div class="Instagram"> <a href="#" class="fa fa-instagram"></a> </div>
+                
+                <div class="Facebook">  <a href="#" class="fa fa-facebook"></a>   </div>
+                
+            </div>
+
+        </main> <!-- Main END-->
+
+        <footer> 
+            <!-- Emtpy Footer-->
+        </footer>
+
+
+    </div>  <!-- CONTAINER END-->
+
+
+</body>
+</html>
